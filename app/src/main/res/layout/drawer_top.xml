@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="250dp"
+              android:layout_alignParentTop="true"
+              android:background="@drawable/backg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@mipmap/push_card"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="   打卡"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/qrcode"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:src="@mipmap/round_icon"
+            />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:text="日光独自倾城却不及旧人"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="18dp"
+        android:maxLines="1"
+        android:text="Everything is always more beautiful reflected in your eyes."
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
